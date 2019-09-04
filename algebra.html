@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+header {
+  background-color: DodgerBlue;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #ADFF2F;
+  height: 300px; /* only for demonstration, should be removed */
+}
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the footer */
+footer {
+  background-color: #20B2AA;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Brenda De La Cruz</h2>
+<p>Aqui : subir toda la mercancia</p>
+
+
+<header>
+  <h2>Algebra de Boole</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://prezi.com/wxrdz4zibgng/?utm_campaign=share&utm_medium=copy">Prezi Algebra de Boole</a></li>
+<br><br>
+      <li><a href="https://docs.google.com/presentation/d/1JekKNkSot3p48_8AIoazpmmdhqPeqHzEhF9EfvDRcAw/edit?usp=sharing">Ejercicios</a></li>
+<br>
+<br>
+      <li><a href="#">Mas</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Algebra de Boole</h1>
+    <p>
+El Álgebra de Boole es un ente matemático constituido por los elementos 0 y 1 y las operaciones suma lógica, producto lógico y complemento.
+Relacionando lo expresado antes, las proposiciones del Álgebra proposicional son variables en el Álgebra de Boole y los valores de verdad que se asignaban a proposiciones son los
+que pueden tomar las variables. El Ose relaciona con el falso y el 1 con el verdadero. El Álgebra
+de Boole constituye el fundamento teórico para el diseño de circuitos digitales. El valor del
+Álgebra de Boole, plasmado en su "Investigación sobre las leyes del pensamiento”, consiste en
+lograr un análisis lógico con un soporte matemático desconocido para su época. Su obra fue
+interpretada como base teórica del desarrollo de la Cibernética.</p>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
